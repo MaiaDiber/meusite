@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(174, 245, 174);
+}
+header {
+    background-color: rgb(61, 61, 61);
+    border-radius: 20px;
+    width: 1360px;
+    margin-top: -10px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 880px;
+}
+.popu {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 70px;
+    color: rgb(174, 245, 174);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.volt {
+    position: relative;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-left: -110px;
+    color: rgb(174, 245, 174);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+a {
+    text-decoration: none;
+    position: relative;
+}
+.volt::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 75%;
+    background-color: rgb(174, 245, 174);
+    height: 3px;
+    transition: 0.3s;
+}
+.volt:hover::before{
+    transition: 0.3s ease;
+    width: 0;
+}
